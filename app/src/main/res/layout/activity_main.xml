@@ -29,6 +29,8 @@
         android:layout_marginTop="8dp"
         android:drawableLeft="@drawable/loctaion"
         android:drawablePadding="15dp"
+        android:fontFamily="@font/merriweathersans_medium"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/searchView"
         app:layout_constraintStart_toStartOf="@+id/searchView"
@@ -50,7 +52,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/merriweathersans_bold"
         android:text="Today"
+        android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lottieAnimationView"
@@ -61,7 +65,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:fontFamily="@font/merriweathersans_semibold"
         android:text="00:00 ℃"
+        android:textColor="@color/black"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.428"
@@ -73,8 +79,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweathersans_regular"
         android:text="Sunny"
         android:textAllCaps="true"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
         app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
@@ -84,6 +92,7 @@
         android:id="@+id/max_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweathersans_regular"
         android:text="Max :00:00℃"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,17 +103,20 @@
         android:id="@+id/min_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweathersans_regular"
         android:text="Min : 00:00℃"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/max_temp"
         app:layout_constraintStart_toStartOf="@+id/max_temp"
-        app:layout_constraintTop_toBottomOf="@+id/max_temp" />
+        app:layout_constraintTop_toBottomOf="@+id/max_temp"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/merriweathersans_bold"
         android:text="Tuesday"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/min_temp"
@@ -116,6 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/merriweathersans_semibold"
         android:text="23 Jan 2023"
         app:layout_constraintEnd_toEndOf="@+id/day"
         app:layout_constraintStart_toStartOf="@+id/day"
@@ -164,22 +177,26 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@tools:sample/avatars"
-                    app:srcCompat="@drawable/humidity" />
+                    app:srcCompat="@drawable/humidity"
+                    />
 
                 <TextView
                     android:id="@+id/humidity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="0.0 %" />
+                    android:text="0.0 %"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
                     android:text="Humidity"
+                    android:textColor="@color/black"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -194,22 +211,25 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wind" />
 
                 <TextView
                     android:id="@+id/windspeed"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="0.00 m/s" />
+                    android:text="0.00 m/s"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
                     android:text="Wind Speed"
+                    android:textColor="@color/black"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -224,22 +244,25 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/conditions" />
 
                 <TextView
                     android:id="@+id/condition"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="Sunny" />
+                    android:text="Sunny"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
                     android:text="Conditions"
+                    android:textColor="@color/black"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -254,22 +277,25 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/sunrise" />
 
                 <TextView
                     android:id="@+id/sunrise"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="00:00" />
+                    android:text="00:00"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
                     android:text="Sunrise"
+                    android:textColor="@color/black"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -284,22 +310,25 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/sunset" />
 
                 <TextView
                     android:id="@+id/sunset"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="00:00" />
+                    android:text="00:00"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
                     android:text="Sunset"
+                    android:textColor="@color/black"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -316,22 +345,25 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/sea" />
 
                 <TextView
                     android:id="@+id/sea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="00 hsp" />
+                    android:text="00 hsp"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
                     android:text="Sea Level"
+                    android:textColor="@color/black"
                     android:textSize="10sp" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
